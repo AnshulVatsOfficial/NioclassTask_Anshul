@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400;1,500&display=swap');
+
+/*Global CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*General CSS*/
+#ques-section{
+    width: 100%;
+    height: 100vh;
+    background-color: #183153;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.question-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ques-title{
+    width: 100% !important;
 }
 
-.App-link {
-  color: #61dafb;
+.ques-title p:nth-child(odd){
+    font-size: 2.25rem;
+    font-weight: 600;
+}   
+
+.ques-title p{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons .toggle-btn{
+    background: #e2e5fe;
+    color: #3b4ef8;
+    padding: 9px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+}
+
+.buttons .toggle-btn:hover{
+    color: white;
+    background: #3b4ef8;
+    box-shadow: 0px 15px 20px rgba(59,78,248, 0.4);
+}
+
+/*Responsiveness and Breakpoints for Buttons*/
+@media screen and (max-width: 456px){
+    .buttons .toggle-btn{
+        background: #e2e5fe;
+        color: #3b4ef8;
+        padding: 7px 22px;
+        border-radius: 5px;
+        font-weight: 500;
+        transition: 0.3s;
+        cursor: pointer;
+        border: none;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 428px){
+    .buttons .toggle-btn{
+        background: #e2e5fe;
+        color: #3b4ef8;
+        padding: 6px 20px;
+        border-radius: 5px;
+        font-weight: 500;
+        transition: 0.3s;
+        cursor: pointer;
+        border: none;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 324px){
+    .buttons .toggle-btn{
+        background: #e2e5fe;
+        color: #3b4ef8;
+        padding: 6px 19px;
+        border-radius: 5px;
+        font-weight: 500;
+        transition: 0.3s;
+        cursor: pointer;
+        border: none;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 316px){
+    .buttons .toggle-btn{
+        background: #e2e5fe;
+        color: #3b4ef8;
+        padding: 5px 15px;
+        border-radius: 5px;
+        font-weight: 500;
+        transition: 0.3s;
+        cursor: pointer;
+        border: none;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 291px){
+    .buttons .toggle-btn{
+        background: #e2e5fe;
+        color: #3b4ef8;
+        padding: 5px 14px;
+        border-radius: 5px;
+        font-weight: 500;
+        transition: 0.3s;
+        cursor: pointer;
+        border: none;
+        font-size: 12px;
+    }
 }
